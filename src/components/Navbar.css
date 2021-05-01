@@ -39,7 +39,7 @@ img {
     animation-name: img-change;
     animation-duration: 100s;
     animation-iteration-count: infinite;
-    animation-delay: 20s;
+    animation-delay: 0;
 }
 
 .opacity {
@@ -62,55 +62,57 @@ img {
     animation-name: color-text;
     animation-duration: 100s;
     animation-iteration-count: infinite;
-    animation-delay: 20s;
+    animation-delay: 0;
 }
 
 @keyframes img-change {
     0% {
-        background-image: url(img/Navbarimg.jpg);
+        background-image: url(img/Navbarimg3.jpg);
+        animation-timing-function: ease-in-out;
     }
-    49% {
-        background-image: url(img/Navbarimg.jpg);
+    31% {
+        background-image: url(img/Navbarimg3.jpg);
         animation-timing-function: ease-out;
     }
-    50% {
+    33% {
         background-image: url(img/Navbarimg2.jpg);
         animation-timing-function: ease-in;
     }
-    99% {
+    65% {
         background-image: url(img/Navbarimg2.jpg);
         animation-timing-function: ease-out;
     }
-    100% {
-        background-image: url(img/Navbarimg3.jpg);
+    67% {
+        background-image: url(img/Navbarimg.jpg);
+        animation-timing-function: ease-in-out;
     }
 }
 
 @keyframes color-text {
     0% {
-        color: rgb(248 191 212);
-        text-shadow: 0px 0px 35px rgb(223 15 15);
-        animation-timing-function: ease-in-out;
+        color: #ecb6ff;
+        text-shadow: 0px 0px 35px #630772;
+        animation-timing-function: linear;
     }
-    49% {
-        color: rgb(248 191 212);
-        text-shadow: 0px 0px 35px rgb(223 15 15);
-        animation-timing-function: ease-out;
+    31% {
+        color: #ecb6ff;
+        text-shadow: 0px 0px 35px #630772;
+        animation-timing-function: linear;
     }
-    50% {
+    33% {
         color: rgb(121 122 29);
         text-shadow: 0px 0px 35px rgb(178 178 178);
         ;
         animation-timing-function: ease-in;
     }
-    99% {
+    65% {
         color: rgb(121 122 29);
         text-shadow: 0px 0px 35px rgb(178 178 178);
         animation-timing-function: ease-out;
     }
-    100% {
-        color: #ecb6ff;
-        text-shadow: 0px 0px 35px #630772;
-        animation-timing-function: linear;
+    67% {
+        color: rgb(248 191 212);
+        text-shadow: 0px 0px 35px rgb(223 15 15);
+        animation-timing-function: ease-in-out;
     }
 }
