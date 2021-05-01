@@ -13,7 +13,7 @@ const App = () => {
         <div className="nav-img">
           <div className="opacity">
             <div className="slider-text">
-              <h1 className="text-center light">GAME NEWS</h1>
+              <h1 className="text-center light">Greetings to all!</h1>
             </div>
           </div>
         </div>

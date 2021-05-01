@@ -2,14 +2,15 @@ img {
     width: 100%;
 }
 
-.modern{
-    color: #00ffe185!important;
+.modern {
+    color: #16b4a28e!important;
     transition: 0.2s;
     font-size: 17.2px;
 }
 
 .modern:hover {
     color: #00FFE0!important;
+    text-shadow: 1px 1px 15px #00FFE0;
 }
 
 .navbar-plus {
@@ -17,8 +18,13 @@ img {
 }
 
 .brand-plus {
-    color: #00FFE0!important;
+    color: #00ffe1e0!important;
     transition: 0.15s;
+    font-weight: 500;
+}
+
+.brand-plus:hover {
+    text-shadow: 0px 0px 10px #14ffe4;
 }
 
 .size-hurricane {
@@ -26,16 +32,20 @@ img {
 }
 
 .nav-img {
-    background-image: url(img/Navbarimg.jpg);
+    background-image: url(img/Navbarimg3.jpg);
     height: 75vh;
     background-size: cover;
     background-position: center;
+    animation-name: img-change;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-delay: 20s;
 }
 
 .opacity {
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,6 +53,64 @@ img {
 }
 
 .light {
-    color: rgb(107, 182, 243);
-    font-family: sans-serif;
+    color: #ecb6ff;
+    text-shadow: 0px 0px 35px #630772;
+    font-size: 45px;
+    font-family: Marker Felt, fantasy;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation-name: color-text;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-delay: 20s;
+}
+
+@keyframes img-change {
+    0% {
+        background-image: url(img/Navbarimg.jpg);
+    }
+    49% {
+        background-image: url(img/Navbarimg.jpg);
+        animation-timing-function: ease-out;
+    }
+    50% {
+        background-image: url(img/Navbarimg2.jpg);
+        animation-timing-function: ease-in;
+    }
+    99% {
+        background-image: url(img/Navbarimg2.jpg);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        background-image: url(img/Navbarimg3.jpg);
+    }
+}
+
+@keyframes color-text {
+    0% {
+        color: rgb(248 191 212);
+        text-shadow: 0px 0px 35px rgb(223 15 15);
+        animation-timing-function: ease-in-out;
+    }
+    49% {
+        color: rgb(248 191 212);
+        text-shadow: 0px 0px 35px rgb(223 15 15);
+        animation-timing-function: ease-out;
+    }
+    50% {
+        color: rgb(121 122 29);
+        text-shadow: 0px 0px 35px rgb(178 178 178);
+        ;
+        animation-timing-function: ease-in;
+    }
+    99% {
+        color: rgb(121 122 29);
+        text-shadow: 0px 0px 35px rgb(178 178 178);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        color: #ecb6ff;
+        text-shadow: 0px 0px 35px #630772;
+        animation-timing-function: linear;
+    }
 }
