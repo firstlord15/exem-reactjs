@@ -5,6 +5,7 @@ import './App.css'
 import '../components/css/items.css'
 import { useState } from 'react';
 import { Link, Route } from 'react-router-dom';
+import Detail from '../components/Detail.js'
 
 const initalState = [
   {
@@ -116,15 +117,15 @@ const App = () => {
         <Navbar />
       </header>
       <main>
-        <div className="nav-img mb-3 ">
-          <div className="opacity">
-            <div className="slider-text">
-              <h1 className="text-center light">Greetings to all!</h1>
+        <Route path="/" exact>
+          <div className="nav-img mb-3 ">
+            <div className="opacity">
+              <div className="slider-text">
+                <h1 className="text-center light">Greetings to all!</h1>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="container card-con border shadow-sm content">
-          <Route path="/" exact>
+          <div className="container card-con border shadow-sm content">
             <div className="row mt-3">
               {news.map((item) => (
                 <div className="col-md-3 opca mb-2 mt-2">
@@ -134,26 +135,31 @@ const App = () => {
                       <h3 className="card-title">{item.short_title}</h3>
                       <p className="card-text">{item.shor_content}</p>
                     </div>
-                    <Link className="m-4 btn btn-game" to="/items">
+                    <Link className="m-4 btn btn-game" to={`/items/${item.id}`}>
                       Detail
                     </Link>
                   </div>
                 </div>
               ))});
             </div>
-          </Route>
-          <Route path="/about" exact>
+          </div>
+        </Route>
+        <Route path="/about" exact>
 
-          </Route>
-          <Route path="/contacts">
-            
-          </Route>
-          <Route path="/register">
-            
-          </Route>
-        </div>
+        </Route>
+        <Route path="/contacts" exact>
+
+        </Route>
+        <Route path="/register" exact>
+
+        </Route>
+        <Route path="/items/:itemId" exact>
+            <div>
+              <Detail news={news} />
+            </div>
+        </Route>
       </main>
-    </div>
+    </div >
   );
 };
 

@@ -18,13 +18,12 @@ img {
     box-shadow: 0 0 10px #ed0b0b;
 }
 
-main {
-    background: url(img-app/1.jpg);
+body {
+    background: linear-gradient(to right, rgb(169 129 140), rgb(210 102 98));
 }
 
 .card-con {
     background: linear-gradient(to left, rgb(169 129 140), rgb(210 102 98));
-    opacity: 0.9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
