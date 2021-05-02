@@ -1,0 +1,49 @@
+.div-modern {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow:  0 0 10px black;
+    background: linear-gradient(to right, rgb(247, 255, 175), rgb(255, 194, 159));
+}
+
+.div-modern2 {
+    border: 1px solid rgb(90, 250, 255);
+    border-radius: 10px;
+    box-shadow:  0 0 10px black;
+    background: linear-gradient(to right, rgb(175, 252, 255), rgb(204, 159, 255));
+}
+
+.text {
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.text-1 {
+    font-family: cursive;
+    color: brown;
+    text-shadow: 0 0 10px rgb(219, 89, 2);
+}
+
+.text-2 {
+    font-family: cursive!important;
+    color: rgb(22, 248, 22)!important;
+    text-shadow: 0 0 10px rgb(27, 206, 11)!important;
+} 
+.text-3 {
+    font-family: cursive;
+    color: rgb(22, 165, 248);
+    text-shadow: 0 0 10px rgb(91, 217, 255);
+}
+
+.title-about {
+    font-family: cursive;
+    font-weight: 900;
+    color: rgb(213, 9, 253);
+    text-shadow: 0 0 10px rgb(230, 2, 211);
+}
+
+.contacts-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(72, 72, 72);
+    text-shadow: 0 0 3px rgb(85, 85, 85);
+    font-size: 30px;
+}

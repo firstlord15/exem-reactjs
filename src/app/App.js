@@ -4,8 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import '../components/css/items.css'
 import { useState } from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Detail from '../components/Detail.js'
+import Contacts from '../components/Contacts'
+import Register from '../components/Register'
+import About from '../components/About'
+import Cards from '../components/Cards.js'
 
 const initalState = [
   {
@@ -110,7 +114,6 @@ const App = () => {
 
   const [news] = useState(initalState)
 
-
   return (
     <div>
       <header>
@@ -128,30 +131,19 @@ const App = () => {
           <div className="container card-con border shadow-sm content">
             <div className="row mt-3">
               {news.map((item) => (
-                <div className="col-md-3 opca mb-2 mt-2">
-                  <div className="card bg-dark text-center news-item">
-                    <img className="card-img-top" alt="" src={item.image} />
-                    <div className="card-body">
-                      <h3 className="card-title">{item.short_title}</h3>
-                      <p className="card-text">{item.shor_content}</p>
-                    </div>
-                    <Link className="m-4 btn btn-game" to={`/items/${item.id}`}>
-                      Detail
-                    </Link>
-                  </div>
-                </div>
+                <Cards item={item} />
               ))});
             </div>
           </div>
         </Route>
         <Route path="/about" exact>
-
+            <About />
         </Route>
         <Route path="/contacts" exact>
-
+            <Contacts />
         </Route>
         <Route path="/register" exact>
-
+            <Register />
         </Route>
         <Route path="/items/:itemId" exact>
             <div>
