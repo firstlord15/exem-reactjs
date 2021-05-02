@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 
 const Detail = ({news}) => {
     
-    const { itemId } = useParams()
+    // const { itemId } = useParams()
 
     return (
         <div>
