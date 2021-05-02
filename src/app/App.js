@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import { useState } from 'react';
 import { Link, Route } from 'react-router-dom';
-import Items from '../components/Items';
 
 const initalState = [
   {
@@ -129,7 +128,7 @@ const App = () => {
               {news.map((item) => (
                 <div className="col-md-3 mb-2 mt-2">
                   <div className="card text-center news-item">
-                    <img className="card-img-top" src={item.image} />
+                    <img className="card-img-top" alt="" src={item.image} />
                     <div className="card-body">
                       <h3 className="card-title">{item.short_title}</h3>
                       <p className="card-text">{item.shor_content}</p>
