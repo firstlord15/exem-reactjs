@@ -37,7 +37,7 @@ img {
     background-size: cover;
     background-position: center;
     animation-name: img-change;
-    animation-duration: 100s;
+    animation-duration: 50s;
     animation-iteration-count: infinite;
     opacity: 1;
 }
@@ -60,7 +60,7 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     animation-name: color-text;
-    animation-duration: 100s;
+    animation-duration: 50s;
     animation-iteration-count: infinite;
     animation-delay: 0;
 }
@@ -68,9 +68,9 @@ img {
 @keyframes img-change {
     0% {
         background-image: url(img/Navbarimg3.jpg);
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
-    31% {
+    32% {
         background-image: url(img/Navbarimg3.jpg);
         animation-timing-function: ease-out;
     }
@@ -78,13 +78,13 @@ img {
         background-image: url(img/Navbarimg2.jpg);
         animation-timing-function: ease-in;
     }
-    65% {
+    66% {
         background-image: url(img/Navbarimg2.jpg);
         animation-timing-function: ease-out;
     }
     67% {
         background-image: url(img/Navbarimg.jpg);
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
 }
 
@@ -94,7 +94,7 @@ img {
         text-shadow: 0px 0px 35px #630772;
         animation-timing-function: linear;
     }
-    31% {
+    32% {
         color: #ecb6ff;
         text-shadow: 0px 0px 35px #630772;
         animation-timing-function: linear;
@@ -105,7 +105,7 @@ img {
         ;
         animation-timing-function: ease-in;
     }
-    65% {
+    66% {
         color: rgb(121 122 29);
         text-shadow: 0px 0px 35px rgb(178 178 178);
         animation-timing-function: ease-out;
@@ -113,6 +113,6 @@ img {
     67% {
         color: rgb(248 191 212);
         text-shadow: 0px 0px 35px rgb(223 15 15);
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
 }

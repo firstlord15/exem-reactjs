@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
+import '../components/css/items.css'
 import { useState } from 'react';
 import { Link, Route } from 'react-router-dom';
 
@@ -126,8 +127,8 @@ const App = () => {
           <Route path="/" exact>
             <div className="row mt-3">
               {news.map((item) => (
-                <div className="col-md-3 mb-2 mt-2">
-                  <div className="card text-center news-item">
+                <div className="col-md-3 opca mb-2 mt-2">
+                  <div className="card bg-dark text-center news-item">
                     <img className="card-img-top" alt="" src={item.image} />
                     <div className="card-body">
                       <h3 className="card-title">{item.short_title}</h3>

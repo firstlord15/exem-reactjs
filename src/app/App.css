@@ -18,13 +18,13 @@ img {
     box-shadow: 0 0 10px #ed0b0b;
 }
 
-body {
+main {
     background: url(img-app/1.jpg);
 }
 
 .card-con {
-    background: linear-gradient(to left, rgb(93 70 76), rgb(145 70 67));
-    opacity: 0.8;
+    background: linear-gradient(to left, rgb(169 129 140), rgb(210 102 98));
+    opacity: 0.9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,5 +35,8 @@ body {
     max-height: 70vh;
     min-height: 70vh;
     max-width: 65vw;
-    margin: 10px auto;   
+    margin: 10px auto; 
+    opacity: 1;
+    color: rgb(255, 255, 255); 
+    text-shadow: 0 0 5px white;
 }
