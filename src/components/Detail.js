@@ -8,7 +8,7 @@ const Detail = ({news}) => {
 
     return (
         <div>
-            {news.filter((news) => itemId === news.id).map((news) => (
+            {news.map((news) => (
                 <div className="container bg mt-2 mb-2">
                     <h1 className="text-center title-style">{news.title}</h1>
                     <img src={news.image} className="p-4 mt-2 mb-2" alt="" />
@@ -19,5 +19,7 @@ const Detail = ({news}) => {
 
     );
 };
+
+{/*{news.filter((news) => itemId === news.id)}*/}
 
 export default Detail;
