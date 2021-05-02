@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import { useState } from 'react';
 import { Link, Route } from 'react-router-dom';
-import '../components/css/items.css'
 import Items from '../components/Items';
 
 const initalState = [
@@ -108,7 +107,8 @@ const initalState = [
 
 const App = () => {
 
-  const [news, setNews] = useState(initalState)
+  const [news] = useState(initalState)
+
 
   return (
     <div>
