@@ -1,6 +1,6 @@
 import React from 'react';
 import '../components/css/Detail.css'
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
 const Detail = ({news}) => {
     
