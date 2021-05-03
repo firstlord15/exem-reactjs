@@ -7,7 +7,7 @@ const Cards = ({ news }) => {
         <>
             {news.map((cards, index) => (
                 <div key={index} className="col-md-3 col-sm-6 opca mt-2">
-                    <div key={index} className="card bg-dark text-center news-item">
+                    <div className="card bg-dark text-center news-item">
                         <img className="card-img-top img-card-min" alt="" src={cards.image} />
                         <div className="card-body">
                             <h3 className="card-title">{cards.short_title}</h3>
