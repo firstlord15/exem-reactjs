@@ -2,7 +2,7 @@
     border: 1px solid lightgray;
     border-radius: 10px;
     box-shadow:  0 0 10px black;
-    background: linear-gradient(to right, rgb(247, 255, 175), rgb(255, 194, 159));
+    background: linear-gradient(to right, rgb(237, 250, 117), rgb(255, 163, 109));
 }
 
 .div-modern2 {
@@ -12,8 +12,15 @@
     background: linear-gradient(to right, rgb(175, 252, 255), rgb(204, 159, 255));
 }
 
+.div-modern3 {
+    border: 1px solid rgb(141, 251, 255);
+    border-radius: 10px;
+    box-shadow:  0 0 10px black;
+    background: linear-gradient(to right, rgb(255, 74, 74), #fff34f);
+}
+
 .text {
-    font-size: 18px;
+    font-size: 25px;
     margin: 0 10px;
 }
 
@@ -36,14 +43,15 @@
 
 .title-about {
     font-family: cursive;
+    font-size: 45px;
     font-weight: 900;
     color: rgb(213, 9, 253);
     text-shadow: 0 0 10px rgb(230, 2, 211);
 }
 
 .contacts-text {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(72, 72, 72);
-    text-shadow: 0 0 3px rgb(85, 85, 85);
+    font-family: sans-serif;
+    font-weight: 600;
+    color: rgb(14, 13, 13);
     font-size: 30px;
 }
