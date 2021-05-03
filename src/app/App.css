@@ -1,5 +1,5 @@
 img {
-    width: 100%;
+    width: 100%!important;
 }
 
 .btn-game {
@@ -31,8 +31,8 @@ body {
 }
 
 .news-item {
-    max-height: 50vh;
-    min-height: 50vh;
+    max-height: 55vh;
+    min-height: 55vh;
     max-width: 65vw;
     margin: 10px auto; 
     opacity: 1;
