@@ -13,7 +13,7 @@ const Cards = ({ news }) => {
                             <p className="card-text">{cards.shor_content}</p>
                         </div>
                         <Link className="m-4 btn btn-game" to={`/items/${cards.id}`}>
-                            Detail
+                            In Detail
                     </Link>
                     </div>
                 </div>
